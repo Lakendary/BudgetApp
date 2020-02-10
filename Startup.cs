@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using BudgetApp.Models;
+using Microsoft.EntityFrameworkCore;
+using BudgetApp.Data;
 
 namespace BudgetApp
 {
@@ -24,6 +27,8 @@ namespace BudgetApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddDbContext<BudgetAppContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("BudgetAppContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
