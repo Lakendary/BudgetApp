@@ -1,0 +1,45 @@
+@page
+@model BudgetApp.Pages.Budgets.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Budget</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Budget.Id" />
+            <div class="form-group">
+                <label asp-for="Budget.StartDate" class="control-label"></label>
+                <input asp-for="Budget.StartDate" class="form-control" />
+                <span asp-validation-for="Budget.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Budget.EndDate" class="control-label"></label>
+                <input asp-for="Budget.EndDate" class="form-control" />
+                <span asp-validation-for="Budget.EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Budget.NumberOfWeeks" class="control-label"></label>
+                <input asp-for="Budget.NumberOfWeeks" class="form-control" />
+                <span asp-validation-for="Budget.NumberOfWeeks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

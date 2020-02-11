@@ -15132,8 +15132,18 @@
   "RootNamespace": "BudgetApp",
   "Documents": [
     {
+      "FilePath": "Pages/Budgets/Edit.cshtml",
+      "TargetPath": "Pages/Budgets/Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages/Privacy.cshtml",
       "TargetPath": "Pages/Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Budgets/Create.cshtml",
+      "TargetPath": "Pages/Budgets/Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15164,6 +15174,21 @@
     {
       "FilePath": "Pages/_ViewImports.cshtml",
       "TargetPath": "Pages/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Budgets/Details.cshtml",
+      "TargetPath": "Pages/Budgets/Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Budgets/Delete.cshtml",
+      "TargetPath": "Pages/Budgets/Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Budgets/Index.cshtml",
+      "TargetPath": "Pages/Budgets/Index.cshtml",
       "FileKind": "mvc"
     }
   ],
